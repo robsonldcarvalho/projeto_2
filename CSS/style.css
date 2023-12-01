@@ -1,0 +1,252 @@
+﻿@charset "utf-8";
+body {
+    margin: auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#interface {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    flex-direction: column; 
+}
+
+header#cabecalho {
+    width: 100%;
+    max-width: 1100px;
+    height: 180px;
+    margin: auto;
+    text-align: center;
+}
+
+nav#menu {
+    width: 100%;
+    max-width: 1100px;
+    height: 35px; 
+    background-color: #000000;
+    margin: 20px auto; 
+    padding: 5px;
+    border-radius: 30px 10px;
+    display: flex;
+    justify-content: center;
+}
+
+section#corpo {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* definicoes da pagina introducao*/
+section#intro {
+    max-width: 1100px; 
+    width: 90%; 
+    margin: auto;
+    margin-top: 80px;
+    background-color: rgba(255, 255, 255, 0.932);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    border-style: outset;
+    padding: 20px; 
+    box-sizing: border-box; 
+}
+
+#intro h2 {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#intro p {
+    margin-top: 20px; 
+    text-align: justify;
+    font-family: sans-serif;
+}
+
+#intro:hover {
+    background-color: #1d7be7;
+    color: #ffffff;
+    transition: background-color 0.3s;
+}
+
+
+/* definicoes da pagina como funciona */
+section#comofunc {
+    max-width: 1100px; 
+    width: 90%; 
+    margin: auto;
+    margin-top: 30px;
+    background-color: rgba(255, 255, 255, 0.932);
+    border-radius: 10px;
+    display: flex;
+    border-style: outset;
+    padding: 20px; 
+    box-sizing: border-box;
+}
+#comofunc h2{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 30px;
+    text-align: center;
+}
+
+#comofunc p{
+    margin-top: 180px;
+    font-family:sans-serif;
+    margin-left: -110px;
+}
+
+
+#comofunc ul li{
+    margin-right: 10px;
+    margin-top: 10px;
+
+}
+#comofunc:hover{
+    background-color: #1d7be7;
+    color: #ffffff;
+    transition: background-color 0.3s;
+}
+
+/* definicoes da pagina resolver */
+section#resolver {
+    max-width: 1100px; 
+    width: 90%; 
+    margin: auto;
+    margin-top: 30px;
+    background-color: rgba(255, 255, 255, 0.932);
+    border-radius: 10px;
+    display: flex;
+    border-style: outset;
+    padding: 20px; 
+    box-sizing: border-box;
+}
+
+#resolver h2{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 30px;
+    text-align: center;
+}
+
+#resolver p{
+    margin-top: 150px;
+    font-family:sans-serif;
+    margin-left: -160px;
+}
+
+
+#resolver ol li{
+    margin-top: 17px;
+    margin-left: 40px;
+    text-align: justify;
+
+}
+#resolver:hover{
+    background-color: #1d7be7;
+    color: #ffffff;
+    transition: background-color 0.3s;
+}
+
+
+/* definicoes do link */
+section#conteudo2 {
+    width: 500px;
+    height: 100%;
+    margin: auto;
+    margin-top: 20px;
+    font-family: 'Nanum Gothic', sans-serif;
+    text-align: center;
+    border-style: outset;
+}
+
+#conteudo2 p {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    margin-top: 10px;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+#conteudo2 img {
+    transition: transform 0.3s ease; 
+}
+
+#conteudo2 img:hover {
+    transform: scale(1.1);
+}
+
+
+/* definições do rodape */
+footer#rodape {
+    width: 100%;
+    max-width: 1100px;
+    height: 35px;
+    background-color: #000000;
+    margin: 20px auto;
+    padding: 5px;
+    border-radius: 30px 10px;
+    position: relative;
+}
+
+#rodape h3 {
+    text-align: center;
+    color: #FFF;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 13px;
+    margin-top: 10px;
+    position: relative;
+}
+
+/* definições do menu */
+
+#menu ul {
+    padding: 20px;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+#menu ul li {
+    display: inline;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+#menu ul li p {
+    margin: -15px 20px 0px 50px;
+    padding: 0;
+    font-size: 14pt;
+    font-family: Calibri;
+    text-align: center;
+}
+
+#menu ul li a {
+    color: #ffffff;
+    background-color: #000000;
+    text-decoration: none;
+    padding: 3px;
+    display: block;
+    margin: 0;
+    float: left;
+}
+
+#menu ul li a:hover {
+    color: #06C;
+    transform: scale(1.1);
+}
+
+
+
