@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="_CSS/style_form.css">
+    <script src="_JS/form.js"></script>
+    <title>Paz e Justiça</title>
+</head>
+<body>
+    <div id="interface">
+        <header id="cabecalho">
+            <div class="logo">          
+                <img src="_imagens/logo.png" alt="Logo ODS 16" width="250" height="250">
+            </div>
+        </header>
+        <nav id="menu">
+            <ul>
+                <li><p><a href="inicial.html">Voltar para a página principal</a></p></li>
+                <li><button class="botao-navegacao" onclick="window.location.href='lista.html'">Ir para a página de consulta</button></li>
+            </ul>
+        </nav>
+        <section id="form">
+            <h1>Formulário</h1>
+            <form id="form1" name="form" onsubmit="handleSubmit(event)">
+                <p>
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" name="nome" id="nome" required>
+                </p>
+                <p>
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email" required>
+                </p>
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" name="tel" id="telefone" required>
+                <p>
+                </p>
+                    <label for="idade">Idade:</label>
+                    <input type="number" name="number" id="idade" min="16" max="120" required>
+                <p>
+                    <label for="assunto">Assunto:</label>
+                    <select name="assunto" id="assunto" >
+                        <option value="Sugestao">Sugestão</option>
+                        <option value="Ideia">Ideias</option>
+                        <option value="Elogio">Elogios</option>
+                        <option value="Reclamacao">Reclamações</option>
+                        <option value="Outro">Outros</option>
+                    </select>
+                </p>
+                    <fieldset id="areas_interesse">
+                        <legend>Áreas de Interesse:</legend>
+                        <input type="checkbox" name="areas_interesse[]" value="Direitos Humanos"> Direitos Humanos
+                        <br>
+                        <input type="checkbox" name="areas_interesse[]" value="Justiça Social"> Justiça Social
+                        <br>
+                        <input type="checkbox" name="areas_interesse[]" value="Governança"> Governança
+                        <br>
+                        <input type="checkbox" name="areas_interesse[]" value="Paz Mundial"> Paz Mundial
+                        <br>
+                        <input type="checkbox" name="areas_interesse[]" value="Justiça Legal"> Justiça Legal
+                        <br>
+                        <input type="checkbox" name="areas_interesse[]" value="Combate à Corrupção"> Combate à Corrupção
+                        <br>
+                        <input type="checkbox" name="areas_interesse[]" value="Segurança Pública"> Segurança Pública
+                        <br>
+                        <input type="checkbox" name="areas_interesse[]" value="Acesso à Justiça"> Acesso à Justiça
+                        <br>
+                        <input type="checkbox" name="areas_interesse[]" value="Direitos das Vítimas"> Direitos das Vítimas
+                        <br>
+                        <input type="checkbox" name="areas_interesse[]" value="Governança Eficaz"> Governança Eficaz
+                    </fieldset>                  
+                <p>
+                    <label for="comentario">Comentário</label>
+                    <textarea name="comentario" id="comentario" cols="60" rows="15" required></textarea>
+                </p>
+                <p>
+                    <input type="submit" name="enviar" id="enviar" value="Enviar">
+                </p>
+            </form>
+        </section>
+        <footer id="rodape">
+            <h4>ADS 2023/2<br>UTFPR - CORNÉLIO PROCÓPIO/PR</h4>
+        </footer>
+    </div>
+</body>
+</html>
